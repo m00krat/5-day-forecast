@@ -3,6 +3,7 @@
 <head>
 	<title>Weather Dashboard</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 </head>
 <body>
 	<header class="bg-primary py-3">
@@ -10,22 +11,34 @@
 			<h1 class="text-white">Weather Dashboard</h1>
 		</div>
 	</header>
-	<main class="container my-4">
-		<form id="cityForm">
-			<div class="form-group">
-				<label for="cityInput">Enter a city name:</label>
-				<input type="text" class="form-control" id="cityInput" placeholder="e.g. London">
-			</div>
-			<button type="submit" class="btn btn-primary">Search</button>
-		</form>
-		<hr>
-		<section id="weatherData"></section>
-		<section id="searchHistory"></section>
-	</main>
+	<main class="container">
+        <div class="row mt-5">
+          <div class="col-lg-6 mx-auto">
+            <form id="weatherForm">
+              <div class="form-group">
+                <label for="cityInput">Enter a city name:</label>
+                <input type="text" class="form-control" id="cityInput" placeholder="e.g. San Francisco">
+              </div>
+              <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-6 mx-auto">
+            <h2 id="cityName"></h2>
+            <h4 id="date"></h4>
+            <img id="weatherIcon" alt="Weather Icon">
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="windSpeed"></p>
+          </div>
+        </div>
+    </main>
 	
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-	integrity="sha384-RZa3qIk3C1j4L96YY2YJyLg8W2IFz52vsgsHsOWs+ZT8B/aTk9E0mHtJ55hLmPAi" crossorigin="anonymous"></script>
+	integrity="sha384-RZa3qIk3C1j4L96YY2YJyLg8W2IFz52vsgsHsOWs+ZT8B/aTk9E0mHtJ55hLmPAi" 
+    crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
