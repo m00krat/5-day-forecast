@@ -4,6 +4,7 @@
 	<title>Weather Dashboard</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    
 </head>
 <body>
 	<header class="bg-primary py-3">
@@ -32,7 +33,17 @@
             <p id="humidity"></p>
             <p id="windSpeed"></p>
           </div>
+          <div id="searchHistory">
+            <ul id="cityList"></ul>
+            <button id="clearCitiesButton" class="btn btn-danger">Clear Cities</button>
+          </div>          
         </div>
+        <div class="row mt-5">
+          <div class="col-lg-6 mx-auto">
+            <h3>5-Day Forecast:</h3>
+            <ul id="forecastList"></ul>
+          </div>
+        </div>        
     </main>
 	
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
