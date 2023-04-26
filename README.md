@@ -1,5 +1,9 @@
 # 5 Day Forecast
 
+## Website URL: https://m00krat.github.io/5-day-forecast/
+
+## Website Image: ![image](https://user-images.githubusercontent.com/122582343/234709904-9379dec9-912f-45b0-84a3-ae870b62afa8.png)
+
 ## User story
 AS A traveler
 
