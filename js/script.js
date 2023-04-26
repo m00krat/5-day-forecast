@@ -1,4 +1,4 @@
-// replace apiKey with your actual API key
+// replace apiKey with actual API key
 const apiKey = "3d164fa37879846ea87d0b9643681167";
 
 function getWeatherForecast(cityName) {
@@ -55,12 +55,12 @@ function getWeatherForecast(cityName) {
     .catch(error => console.error(error));
 }
 
-// retrieve the last searched city from local storage
+// retrieve last searched city from local storage
 const lastSearchedCity = localStorage.getItem("lastSearchedCity");
 
-// if the last searched city is not null, display it as a button or link
+// if the last searched city is not null, display it as button or link
 if (lastSearchedCity !== null) {
-  getWeatherForecast(lastSearchedCity); // add this line to get the 5-day forecast for the last searched city
+  getWeatherForecast(lastSearchedCity); //get 5-day forecast for the last searched city
 }
 
 function handleSubmit(event) {
